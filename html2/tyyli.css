@@ -1,0 +1,73 @@
+
+html {
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+}
+a {
+	margin-right: 30px;
+}
+c {
+	margin-right: 400px;
+}
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: linear-gradient(to bottom, rgb(0, 174, 255), rgb(0, 153, 255));
+	border-color: rgb(132, 178, 230);
+	flex-wrap: wrap;
+	padding: 5px;	
+	border-style: outset;
+	
+	margin-bottom: 8px;
+	border-radius: 5px;
+	  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+	
+}
+.flex-item {
+	padding: 10px;
+	flex: 1;
+	border-radius: 5px;
+	opacity: 1;
+	
+	
+}
+.right {
+	text-align: right;
+}
+.yksi {
+	flex-grow: 1;		
+}
+.kaksi {
+	flex-grow: 2
+}
+.kolme {
+	flex-grow: 3
+}
+.nelja {
+	flex-grow: 4
+}
+#haku {
+	padding: 5px 2px 5px 2px;
+	width: 100%; /* pitää olla tai box-sizing ei toimi */
+	box-sizing: border-box;	/* laatikon padding ei vaikuta leveyteen */	
+	
+	border-radius: 3px;
+	
+	
+}
+body {
+background-image: url("https://preview.redd.it/frutiger-aero-wallpaper-i-whipped-up-in-a-few-hours-hoping-v0-jcaq7gsamypc1.png?auto=webp&s=7542aa8c7ed3362529c9b4cc527698e64e4745ee");
+background-color: #cccccc;
+background-size: cover;
+}
+p {
+	margin-bottom: 10px;
+}
+
