@@ -70,6 +70,19 @@ background: linear-gradient(156deg,rgba(174, 215, 232, 0.6) 0%, rgba(255, 255, 2
   
 	
 }
+.flex-container4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+
+
+	margin-bottom: 8px;
+
+  
+	
+}
 .flex-container-pysty {
 	display: flex;
 	flex-direction:column;
@@ -130,7 +143,7 @@ background: linear-gradient(156deg,rgba(174, 215, 232, 0.6) 0%, rgba(255, 255, 2
 	
 	margin-bottom: 8px;
 	width: 150px;
-	height: 800px;
+	height:900px;
 	border-radius: 5px;
 	  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -179,6 +192,9 @@ background: linear-gradient(156deg,rgba(174, 215, 232, 0.6) 0%, rgba(255, 255, 2
 }
 .right {
 	text-align: right;
+}
+.puolikas {
+	flex-grow: 0.3;
 }
 .yksi {
 	flex-grow: 1;		
