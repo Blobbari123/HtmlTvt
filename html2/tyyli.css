@@ -74,7 +74,7 @@ background: linear-gradient(156deg,rgba(174, 215, 232, 0.6) 0%, rgba(255, 255, 2
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: left;
 
 
 
@@ -130,7 +130,7 @@ background: linear-gradient(156deg,rgba(174, 215, 232, 0.6) 0%, rgba(255, 255, 2
 .flex-container-pysty4 {
 	display: flex;
 	flex-direction:column;
-	justify-content: space-between;
+	
 	align-items: left;
 	
 
@@ -142,8 +142,9 @@ background: linear-gradient(156deg,rgba(174, 215, 232, 0.6) 0%, rgba(255, 255, 2
 	border-style: outset;
 	
 	margin-bottom: 8px;
-	width: 150px;
-	height:1750px;
+	width: fit-content;
+	height: 98.5%;
+	
 	border-radius: 5px;
 	  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -169,9 +170,9 @@ background: linear-gradient(156deg,rgba(174, 215, 232, 0.6) 0%, rgba(255, 255, 2
 	
 	margin-bottom: 8px;
 	
-	height: 800px;
+	
 	border-radius: 5px;
-	  backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 	
 
@@ -234,4 +235,59 @@ a:hover {
 .t {
 	margin-bottom: 1px;
 }
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
+.team-card {
+    width: calc(50% - 15px); /* 2 per row */
+}
+
+.flex-container-pysty5 {
+	display: flex;
+	flex-direction:column;
+	
+	align-items: center;
+	
+
+	background: #aed7e8;
+	background: linear-gradient(156deg,rgba(174, 215, 232, 0.6) 0%, rgba(255, 255, 255, 0.6) 35%, rgba(174, 215, 232, 0.6) 49%, rgba(255, 255, 255, 0.6) 70%, rgba(174, 215, 232, 0.6) 100%);
+	border-color: rgb(132, 178, 230);
+	flex-wrap: wrap;
+	padding: 5px;	
+	border-style: outset;
+	
+	margin-bottom: 8px;
+	
+	width: 1750px;
+	height: 98.5%;
+	border-radius: 5px;
+	  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+   
+	
+
+
+
+
+}
+
+#text {
+	justify-content: flex-end;
+	white-space: normal;
+}
+#h2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; 
+}
+
+tin {
+	margin-right: 1px;
+}
+tin:hover {
+	color: green;
+}
