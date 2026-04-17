@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="fi">
-
+ 
 <head>
     <meta charset="utf-8">
     <title>WWW Harjoitus – Tarik Hadzic</title>
-
+ 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="tyyli.css">
 </head>
-
+ 
 <body>
-
+ 
     <!-- NAVBAR -->
-    <nav class="flex-container">
+    <nav class="flex-container navbar">
         <div class="flex-item yksi">
             <img src="https://static.wikia.nocookie.net/frutigeraero/images/2/2a/Icon1.png/revision/latest?cb=20241230231133"
                 width="64" alt="Logo">
         </div>
-
-        <div class="flex-item kolme">
+ 
+        <div class="flex-item kolme nav-links" id="nav-links">
             <a href="index.html">Home</a>
             <a href="games.html">Games</a>
             <a href="about.html">About</a>
         </div>
-
-        <div class="flex-item right yksi">
+ 
+        <div class="flex-item right yksi nav-links" id="nav-links-right">
             <a href="register.html">Register</a>
             <a href="login.html">Login</a>
         </div>
+ 
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
-
+ 
+    <!-- burgeri -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+    </div>
+ 
     <!-- HEADER -->
     <header class="flex-container">
         <div class="flex-item nelja">About &gt; Location</div>
-
+ 
         <div class="flex-item right yksi">
             <label for="haku" class="visually-hidden"></label>
             <input type="text" id="haku" placeholder="Search...">
         </div>
     </header>
-
+ 
     <!-- MAIN CONTENT -->
     <main class="flex-container4">
-
+ 
         <!-- LEFT SIDEBAR -->
         <aside class="flex-item puolikas">
             <nav class="flex-container-pysty4">
@@ -56,23 +71,28 @@
                 <a href="Contact.html">Contact</a>
             </nav>
         </aside>
-
+ 
         <!-- RIGHT CONTENT -->
         <section class="flex-item puolikas">
             <div class="flex-container-pysty5 nelja">
                 <h1>Our Address</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sapien et erat pharetra
                     blandit.</p>
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.5769066861783!2d22.255268543958675!3d60.459183837955536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c7658540c066f%3A0x963a196363e9ec5!2sTurun%20ammatti-instituutti%2C%20Juhannuskukkulan%20koulutalo!5e0!3m2!1sfi!2sfi!4v1775640153509!5m2!1sfi!2sfi"
-                    width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" title="Map to Turun ammatti-instituutti"></iframe>
+ 
+                <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?..."
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to Turun ammatti-instituutti">
+        </iframe>
+    </div>
             </div>
         </section>
-
+ 
     </main>
-
+ 
     <!-- FOOTER -->
     <footer class="flex-container">
         <div class="flex-item nelja">
@@ -80,7 +100,7 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <p>© Tarik Hadzic 2026. All rights reserved</p>
         </div>
-
+ 
         <div class="flex-item yksi">
             <div class="flex-container2">
                 <div class="flex-container-pysty">
@@ -90,7 +110,7 @@
                     <a href="register.html">Register</a>
                     <a href="login.html">Login</a>
                 </div>
-
+ 
                 <div class="flex-container3">
                     <div class="flex-container-pysty">
                         <a href="https://github.com/Blobbari123">GitHub</a>
@@ -101,7 +121,19 @@
             </div>
         </div>
     </footer>
-
+ 
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobile-menu');
+ 
+        burger.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            burger.classList.toggle('open');
+            burger.setAttribute('aria-expanded', isOpen);
+        });
+    </script>
+ 
 </body>
-
+ 
 </html>
+ 
